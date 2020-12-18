@@ -11,9 +11,9 @@ struct Node {
 Node *root1,*root2;
 Node *node1,*node2,*node3,*node4,*node5;
 
-int root() {
+Node root() {
 	cout<<"root= "<<root1->data<<endl;
-	return root1->data;
+	return *root1;
 	}
 
 void addChild(Node *p, Node *n){
